@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.aboutContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+  margin: 100px 0;
+  padding: 20px 0;
+}
+
+.aboutContainer .heading {
+  font-size: 22px;
+  font-weight: 700;
+  color: #d4500d;
+  position: relative;
+  line-height: 0.9;
+}
+
+.aboutContainer .subHeading {
+  font-size: 24px;
+  font-weight: 500;
+  color: #e1ffda;
+  font-family: "Clash Display", sans-serif;
+  letter-spacing: 1px;
+}
+
+.aboutContainer .aboutNavbar {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.aboutContainer .aboutNavbar p {
+  width: fit-content;
+  cursor: pointer;
+  color: #666;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.aboutContainer .aboutNavbar p.activeQuestion {
+  border-bottom: 3px solid #d4500d;
+  color: #e1ffda;
+}
+
+.aboutContainer .displayContent {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin-top: 40px;
+}
+
+.aboutContainer .displayContent .imageContainer {
+  width: 500px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.aboutContainer .displayContent .imageContainer img {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.aboutContainer .displayContent .imageContainer img:hover {
+  filter: grayscale(0%);
+}
+
+.aboutContainer .displayContent .infoContainer {
+  width: 450px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #d4500d;
+  position: relative;
+  left: -12%;
+}
+
+.aboutContainer .displayContent .infoContainer p {
+  font-size: 14px;
+  width: 260px;
+  color: #e1ffda;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutContainer {
+    gap: 8px;
+    margin: 80px 0;
+  }
+
+  .aboutContainer h1 {
+    font-size: 18px;
+  }
+
+  .aboutContainer h2 {
+    font-size: 20px;
+  }
+
+  .aboutContainer .aboutNavbar {
+    gap: 60px;
+  }
+
+  .aboutContainer .aboutNavbar p {
+    font-size: 16px;
+  }
+
+  .aboutContainer .displayContent {
+    margin-top: 30px;
+  }
+
+  .aboutContainer .displayContent .imageContainer {
+    width: 400px;
+  }
+
+  .aboutContainer .displayContent .infoContainer {
+    width: 380px;
+    left: -8%;
+  }
+
+  .aboutContainer .displayContent .infoContainer p {
+    width: 250px;
+    top: 50%;
+    left: 55%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .aboutContainer {
+    gap: 8px;
+    margin: 60px 0;
+  }
+
+  .aboutContainer .heading {
+    font-size: 16px;
+  }
+
+  .aboutContainer .subHeading {
+    font-size: 18px;
+  }
+
+  .aboutContainer .aboutNavbar {
+    gap: 40px;
+  }
+
+  .aboutContainer .aboutNavbar p {
+    font-size: 16px;
+  }
+
+  .aboutContainer .displayContent {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .aboutContainer .displayContent .imageContainer {
+    width: 360px;
+  }
+
+  .aboutContainer .displayContent .infoContainer {
+    width: 380px;
+    left: 0;
+    margin-top: -30%;
+  }
+
+  .aboutContainer .displayContent .infoContainer p {
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .aboutContainer .heading {
+    font-size: 14px;
+  }
+
+  .aboutContainer .subHeading {
+    font-size: 16px;
+  }
+
+  .aboutContainer .aboutNavbar {
+    gap: 10px;
+  }
+
+  .aboutContainer .aboutNavbar p {
+    font-size: 11px;
+  }
+
+  .aboutContainer .displayContent .imageContainer {
+    width: 280px;
+  }
+
+  .aboutContainer .displayContent .infoContainer {
+    width: 300px;
+    left: 0;
+    margin-top: -24%;
+  }
+
+  .aboutContainer .displayContent .infoContainer p {
+    font-size: 12px;
+    width: 200px;
+  }
+}

@@ -1,0 +1,126 @@
+.footerContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  overflow-x: hidden;
+  padding: 40px 100px;
+  border-top: 2px solid white;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footerContainer .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.footerContainer .navLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.footerContainer .navLinks h3,
+.footerContainer .socialHandles h3,
+.footerContainer .textSection h1 {
+  font-size: 20px;
+  font-family: "Clash Display", sans-serif;
+  letter-spacing: 1px;
+}
+
+.footerContainer .navLinks .sectionLink {
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.footerContainer .navLinks .sectionLink:hover {
+  color: #0d92d4;
+}
+
+.footerContainer .socialHandles {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.footerContainer .socialHandles div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.footerContainer .socialHandles img {
+  width: 30px;
+}
+
+.footerContainer .textSection {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.footerContainer .textSection h2 {
+  font-size: 70px;
+  font-family: "Pretty Dahlia", sans-serif;
+  color: var(--secondary-color);
+  text-wrap: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .footerContainer {
+    padding: 20px 40px;
+  }  
+  
+  .footerContainer .links {
+    width: 100%;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .footerContainer .navLinks {
+    gap: 8px;
+  }
+  
+  .footerContainer .navLinks h3,
+  .footerContainer .socialHandles h3,
+  .footerContainer .textSection h1 {
+    font-size: 16px;
+  }
+  
+  .footerContainer .navLinks .sectionLink {
+    font-size: 14px;
+  }
+
+  .footerContainer .socialHandles {
+    gap: 8px;
+  }
+  
+  .footerContainer .socialHandles div {
+    gap: 8px;
+  }
+  
+  .footerContainer .socialHandles img {
+    width: 24px;
+  }
+  
+  .footerContainer .textSection {
+    gap: 8px;
+    align-items: start;
+  }
+  
+  .footerContainer .textSection h2 {
+    font-size: 50px;
+  }
+}
